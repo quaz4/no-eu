@@ -1,0 +1,32 @@
+{
+  "name": "no-eu",
+  "version": "1.0.0",
+  "description": "Express middleware that blocks all EU traffic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quaz4/no-eu.git"
+  },
+  "keywords": [
+    "eu",
+    "gdpr",
+    "express",
+    "node",
+    "middleware",
+    "block"
+  ],
+  "author": "William Stewart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quaz4/no-eu/issues"
+  },
+  "homepage": "https://github.com/quaz4/no-eu#readme",
+  "dependencies": {
+    "geolite2": "^1.3.0",
+    "ipware": "^1.0.0",
+    "maxmind": "^2.7.0"
+  }
+}
