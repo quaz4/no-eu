@@ -16,8 +16,6 @@ app.use(eu( (req, res, location) => {
 }));
 
 app.get('/', (req, res) => {
-    let ip = getIP(req).clientIp;
-    let location = lookup.get(ip);
     res.send("Yay you're not in the EU");
 });
 
