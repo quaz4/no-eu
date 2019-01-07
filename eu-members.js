@@ -27,5 +27,6 @@ module.exports = [
     "SI",
     "ES",
     "SE",
-    "GB"
+    "GB",
+    "NO"
 ];
