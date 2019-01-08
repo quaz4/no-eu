@@ -1,6 +1,6 @@
 {
   "name": "no-eu",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Express middleware that blocks all EU traffic",
   "main": "index.js",
   "scripts": {
