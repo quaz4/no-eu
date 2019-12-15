@@ -1,12 +1,13 @@
+const getIP = require('ipware')().get_ip;
+const geolite2 = require('geolite2');
+const maxmind = require('maxmind');
+const eu = require("./eu-members");
+
+const lookup = maxmind.openSync(geolite2.paths.country);
+
 module.exports = function(callback) {
-    return function(req, res, next) {
-        const getIP = require('ipware')().get_ip;
-        const geolite2 = require('geolite2');
-        const maxmind = require('maxmind');
-        const eu = require("./eu-members");
-        
+    return function(req, res, next) {        
         try {
-            const lookup = maxmind.openSync(geolite2.paths.country);
             let ip = getIP(req).clientIp;
             let location = lookup.get(ip).country.iso_code;
 
